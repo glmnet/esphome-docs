@@ -29,7 +29,6 @@ directly integrate into Home Assistant through the native API.
 
 Configuration variables:
 ------------------------
-
 - **name** (**Required**, string): The name of the camera.
 
 Connection Options:
