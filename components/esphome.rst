@@ -20,7 +20,6 @@ where you specify the **name** of the node, the **platform** and
 
 Configuration variables:
 ------------------------
-
 - **name** (**Required**, string): This is the name of the node. It
   should always be unique in your esphome network. May only contain upper/lowercase
   characters, digits and underscores. See :ref:`esphome-changing_node_name`.
