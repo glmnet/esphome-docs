@@ -955,10 +955,14 @@ if __name__ == "__main__":
                             schema = json_config[config_component]["schemas"].get(
                                 f"{platform_name.upper()}_SCHEMA"
                             )
-                        else:
+                        elif platform_name:
                             schema = json_config[f"{config_component}.{platform_name}"][
                                 "schemas"
                             ].get("CONFIG_SCHEMA")
+                        else:
+                            print(
+                                f"{md_file}:{index} {config_component} unknown component type"
+                            )
                     else:
                         schema = None
                 if schema:
